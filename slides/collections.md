@@ -6,7 +6,7 @@
 - Les collections sont définies par une série d'interfaces en décrivant le comportement (Set, List et Map principalement)
 - Java dispose de plusieurs implémentations de ces interfaces selon l'usage envisagé.
 
-![Collections](images/collections.png){style="width: 50%;"}
+![Collections](/images/collections.png){style="width: 50%;"}
 
 ---
 

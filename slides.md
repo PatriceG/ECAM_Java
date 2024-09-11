@@ -37,17 +37,35 @@ transition: fade-out
 
 # Programme du Cours
 
-<Toc minDepth="1" maxDepth="1"></Toc>
+<!-- does not work in our context: <Toc minDepth="1" maxDepth="1"></Toc> -->
+1. La Plateforme Java
+2. Les Packages
+3. Les Collections
+4. Les Annotations
+5. Rappels sur les Exceptions
+6. Les Entrées/Sorties
+7. L'utilisation du format JSON
+8. L'accès aux bases de données relationnelles
+9. JavaEE: Les Servlets et les JSP
+10. Développement d'une application Web
+11. Les Taglibs JSP
 
 ---
+src: slides/pf_java.md
+---
 
-# Slide 1
+---
+src: slides/packages.md
+---
 
-  - l1
-    - l1 1
-  - l2
-  - l3
-  
+---
+src: slides/collections.md
+---
+
+---
+src: slides/annotations.md
+---
+
 ---
 
 # Code 1

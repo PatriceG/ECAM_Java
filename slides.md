@@ -67,6 +67,22 @@ src: slides/annotations.md
 ---
 
 ---
+src: slides/exceptions.md
+---
+
+---
+src: slides/io.md
+---
+
+---
+src: slides/json.md
+---
+
+---
+src: slides/jdbc.md
+---
+
+---
 
 # Code 1
 
@@ -104,16 +120,6 @@ liste.clear();
 ```
 ````
 
----
-
-# Code 2
-
-```java{monaco}
-import java.util.List;
-import java.util.ArrayList;
-
-java.util.List<String> liste = new java.util.ArrayList<String>();
-```
 
 ---
 

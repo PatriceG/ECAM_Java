@@ -25,7 +25,8 @@
 
 # Qu'est-ce qu'une Exception?
 
-![Exceptions](/images/exceptions.png){style="width: 65%;"}
+
+![Exceptions](/images/exceptions.png){.block .mx-auto .w-1/2}
 
 - On doit traiter (catch) ou propager (throws) les Checked Exceptions
 
@@ -103,6 +104,7 @@ try{
     
 ---
 
-# Exceptions: Le mécanisme
+# Exceptions
+Le mécanisme
 
-![Exceptions](/images/exceptions_anim.png){style="width: 100%;"} 
+![Exceptions](/images/exceptions_anim.png){.block .mx-auto } 

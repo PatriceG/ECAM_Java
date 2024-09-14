@@ -35,7 +35,7 @@ De nombreuses classes adaptées à chaque besoin.
 
 # Les I/O - flux binaires
 
-  ![streams](/images/streams.png){style="width: 65%;"}
+  ![streams](/images/streams.png){.block .mx-auto .w-2/3}
 
 ---
 
@@ -87,7 +87,7 @@ Ces opérations sont susceptibles de lancer une _IOExceptions_ ➩ besoin d'un b
 
 # Les I/O - Flux de caractères
 
-  ![streams](/images/writers.png){style="width: 68%;"}
+  ![streams](/images/writers.png){.block .mx-auto .w-2/3}
 
 ---
 

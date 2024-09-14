@@ -1,4 +1,3 @@
-
 # Les Annotations
 
 - Apparues avec Java 5
@@ -73,5 +72,3 @@ private String nom;
 private JPEG photo;
 }
 ```
-
-**Configure automatiquement le service de persistance et crée la base de données.**

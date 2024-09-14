@@ -1,20 +1,20 @@
 
 # La Plafeforme Java
-## Adaptée à chaque usage
+Adaptée à chaque usage
 
 ![La PF Java](/images/pfJava.png){style="width: 65%;"}
 
 ---
 
 # La Plafeforme Java
-## JavaSE
+JavaSE
 
 ![JavaSE](/images/javaSE.png){style="width: 65%;"}
 
 ---
 
 # La Plafeforme Java
-## JavaEE
+JavaEE
 
   - Dédiée au développement Serveur (middleware en particulier)
   - JavaSE enrichie des Servlets, JSP, Enterprise JavaBeans et services associés.
@@ -26,7 +26,7 @@
 ---
 
 # La Plafeforme Java
-## JavaEE
+JavaEE
 
   - JavaEE enrichit JavaSE comme indiqué ci-dessous:
   

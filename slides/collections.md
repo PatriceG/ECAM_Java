@@ -6,7 +6,7 @@
 - Les collections sont définies par une série d'interfaces en décrivant le comportement (Set, List et Map principalement)
 - Java dispose de plusieurs implémentations de ces interfaces selon l'usage envisagé.
 
-![Collections](/images/collections.png){style="width: 50%;"}
+![Collections](/images/collections.png){.block .mx-auto .w-1/2}
 
 ---
 
@@ -88,7 +88,7 @@
 ---
 
 # Les Collections
-## Exemples
+Exemples
 
 - Interface java.util.Collection&lt;T&gt;:
   
@@ -111,7 +111,7 @@ List<T> subList(int fromIndex, int toIndex)
 ---
 
 # Les Collections
-## Exemples
+Exemples
 
 - Interface java.util.Map&lt;K,V&gt;:
 
@@ -133,7 +133,6 @@ Collection<V> values() //retourne l’ensemble des valeurs de la Map
 
 ````md magic-move {lines: true}
 ```java
-// step 1
 import java.util.List;
 import java.util.ArrayList;
 
@@ -143,7 +142,6 @@ java.util.List<String> liste = new java.util.ArrayList<String>();
 ```
 
 ```java
-// step 2
 import java.util.List;
 import java.util.ArrayList;
 
@@ -176,7 +174,6 @@ liste.clear();
 
 ````md magic-move {lines: true}
 ```java
-// step 1
 import java.util.Map;
 import java.util.HashMap;
 
@@ -186,7 +183,6 @@ java.util.Map<String> myMap = new new java.util.HashMap<String,String>();
 ```
 
 ```java
-// step 2
 import java.util.Map;
 import java.util.HashMap;
 
@@ -218,7 +214,7 @@ myMap.remove("clef2") //enlève l'élément ayant la clé spécifiée
 ---
 
 # Les Collections
-## Parcours
+Parcours
 
 L'interface _java.util.Iterator&lt;T&gt;_ permet de parcourir une _java.util.Collection&lt;T&gt;_ simplement et éventuellement de modifier celle-ci en cours de parcours.
 
@@ -237,7 +233,7 @@ while(it.hasNext())
 ---
 
 # Les Collections
-## Parcours
+Parcours
 
 En pratique on préfère souvent cette structure de boucle for qui permet de parcourir encore plus simplement n'importe quel objet implémentant l'interface _Iterable_
 
@@ -258,7 +254,7 @@ for(String element : liste)
 ---
 
 # Les Collections
-## Tri
+Tri
 
 Il existe plusieurs façons d'obtenir une collection triée:
 Soit les objets dans la collection implémentent _java.lang.Comparable_:
@@ -283,7 +279,7 @@ Le package _java.util.collections_ contient beaucoup d'autres méthodes utilitai
 ---
 
 # Les Collections
-## Tri
+Tri
 
 L'interface _java.lang.Comparable_ est implémentée par de nombreux objets Java (String,…)
 
@@ -304,10 +300,9 @@ public int compareTo(Object o) throws ClassCastException;
 ---
 
 # Les Collections
-## Tri
+Tri
 
-L'interface java.util.Comparator&lt;T&gt; 
-Permet de comparer des objets n'implémentant pas _java.lang.Comparable_ en implémentant soi-même l'algorithme de comparaison (l'algorithme de tri est lui déjà implémenté dans le JDK)
+L'interface java.util.Comparator&lt;T&gt; permet de comparer des objets n'implémentant pas _java.lang.Comparable_ en implémentant soi-même l'algorithme de comparaison (l'algorithme de tri est lui déjà implémenté dans le JDK)
 
 ```java
 public interface Comparator<T>
@@ -332,7 +327,7 @@ public boolean equals(Object o);
 ---
 
 # Les Collections
-## Tri
+Tri
 
 La méthode int compare(T o1, T o2) doit être implémentée de sorte que:
 
@@ -349,7 +344,7 @@ Le sens de "supérieur" ou "inférieur" dépend du contexte métier:
 ---
 
 # Les Collections
-## Tri - Exemple Concret
+Tri - Exemple Concret
 
 Soit la classe Point:
 
@@ -382,7 +377,7 @@ public int compare(Point p1, Point p2) {
 ---
 
 # Les Collections
-## Tri - Exemple Concret
+Tri - Exemple Concret
 
 Tri d'une List&lt;Point&gt;
 
@@ -429,7 +424,7 @@ for(Point p : lst){
 ---
 
 # Les Collections
-## Fonctionnement de contains(Object o)
+Fonctionnement de contains(Object o)
 
 - La méthode _contains(Object o)_ invoque _equals()_ sur tous les objets de la collection.
 - L’implémentation de _equals()_ n’est correcte que pour les types standards (String, Integer),… son implémentation par défaut dans _Object_ compare les références en mémoire (et non l’identité des objets).

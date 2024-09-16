@@ -57,7 +57,7 @@ int calcule_prix (int nombre, int prix_u) throws NombreNegatifException {
 ```java
 try {
 	a();
-	calcule_prix(); //code susceptible de lever une exception
+	calcule_prix(23,150); //code susceptible de lever une exception
 	c();
 }
 catch(NombreNegatifException e1){
@@ -133,7 +133,8 @@ Object getContent()
 </div>
 <div>
 ```java
-void openConnection() throws IOException {
+void openConnection() 
+    throws IOException {
   openSocket();
   sendRequest();
   receiveResponse();
@@ -145,7 +146,8 @@ void openConnection() throws IOException {
 <div>
 
 ```java
-void sendRequest() throws IOException {
+void sendRequest() 
+    throws IOException {
   write(header);
   write(body); // ERROR
 }

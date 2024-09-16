@@ -138,7 +138,8 @@ ResultSet rs = prepStmt.executeQuery();
 ```java
 PreparedStatement prepStmt = conn.prepareStatement ("select * from villes where code_postal like ?");
 prepStmt.setString(1,"35000"); // valorise le premier paramètre
-ResultSet rs = prepStmt.executeQuery(); //rs est un "curseur" initialemnt placé juste avant le premier résultat retourné
+ResultSet rs = prepStmt.executeQuery(); //rs est un "curseur" 
+//initialemnt placé juste avant le premier résultat retourné
 while (rs.next()) // pour chaque ligne de résultat
 {
    // affiche les valeurs de la ligne courante

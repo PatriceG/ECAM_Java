@@ -100,7 +100,9 @@ boolean contains(T o)  //retourne true si la collection contient o.
 boolean isEmpty()
 Iterator<T> iterator() //retourne un itérateur sur la collection.
 int size()
+```
 
+```java
 Interface java.util.List<T> (extends java.util.Collection<T>):
 T get(int index)
 T remove(int index)

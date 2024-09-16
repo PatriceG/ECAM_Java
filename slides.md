@@ -16,6 +16,9 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
 
+#enable PDF generation
+download: true
+
 title: Java - Les Points Essentiels
 class: text-center
 ---

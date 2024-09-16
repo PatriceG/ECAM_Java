@@ -58,6 +58,23 @@ Ces opérations sont susceptibles de lancer une _IOExceptions_ ➩ besoin d'un b
 
 ---
 
+# Lecture d'un fichier binaire en mémoire
+Méthode _moderne_ avec java.nio
+
+```java
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.io.IOException;
+//...
+Path path = Paths.get("chemin/vers/fichier.png");
+byte[] fileBytes = Files.readAllBytes(path);
+//utilisation de fileBytes...
+
+```
+
+---
+
 # Les IO - Flux de caractères
 
 - _Writer/Reader_
@@ -110,7 +127,7 @@ Ces opérations sont susceptibles de lancer une _IOExceptions_ ➩ besoin d'un b
 ---
 
 # Lecture sur la console 
-## (a.k.a) 'Entrée Standard'
+(a.k.a) 'Entrée Standard'
 
 - méthode 1
   
@@ -129,3 +146,47 @@ Console console = System.console();
 String ligne = console.readLine("%s", "Saisir quelque chose: ");
 System.out.println("ligne saisie: " + ligne);
 ```
+
+---
+
+# Lecture d'un fichier texte en mémoire
+Méthode _moderne_ avec java.nio
+
+````md magic-move {lines: true}
+```java
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.io.IOException;
+//...
+Path path = Paths.get("chemin/vers/fichier.txt");
+//chargement d'un bloc de l'intégralité du fichier
+List<String> lines = Files.readAllLines(path);
+for (String line : lines) {
+  System.out.println(line);
+}
+
+```
+
+```java
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.io.IOException;
+//...
+Path path = Paths.get("chemin/vers/fichier.txt");
+//chargement d'un bloc de l'intégralité du fichier
+List<String> lines = Files.readAllLines(path);
+for (String line : lines) {
+  System.out.println(line);
+}
+
+//ou, plus performant (chargement progessif via un Stream):
+try (Stream<String> lines = Files.lines(path)) {
+  lines.forEach(System.out::println); 
+} catch (IOException e) {
+  e.printStackTrace();
+}
+
+```
+````

@@ -107,4 +107,50 @@ try{
 # Exceptions
 Le mécanisme
 
-![Exceptions](/images/exceptions_anim.png){.block .mx-auto } 
+<!-- ![Exceptions](/images/exceptions_anim.png){.block .mx-auto } -->
+
+<div class="grid grid-cols-[33%_33%_33%] gap-none">
+<div>
+```java
+Object getContent()
+{
+  try{
+    openConnection();
+  }
+  catch(IOException e) {
+    e.printStackTrace();
+  }
+  finally{
+    //libère ressources
+    ...
+  }
+  
+  ...
+  
+}
+```
+
+</div>
+<div>
+```java
+void openConnection() throws IOException {
+  openSocket();
+  sendRequest();
+  receiveResponse();
+}
+
+```
+
+</div>
+<div>
+
+```java
+void sendRequest() throws IOException {
+  write(header);
+  write(body); // ERROR
+}
+
+```
+
+</div>
+</div>

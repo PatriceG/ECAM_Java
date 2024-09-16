@@ -31,7 +31,7 @@ Patrice GODARD
 
 patrice.godard@orange.com
 
-<div class="w-75 h-px bg-gray absolute bottom-5 left-0 text-sm">Menu ci-dessous&nbsp;&nbsp;|&nbsp;&nbsp;← → pour se déplacer
+<div class="w-75 h-px bg-gray absolute bottom-5 left-0 text-sm">Menu ici&nbsp;&nbsp;|&nbsp;&nbsp;← → pour se déplacer
 </div>
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)

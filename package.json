@@ -5,6 +5,7 @@
   "scripts": {
     "build": "slidev build",
     "build_pdf": "slidev build --download",
+    "remote": "slidev --remote --open",
     "dev": "slidev --open",
     "export": "slidev export"
   },

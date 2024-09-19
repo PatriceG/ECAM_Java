@@ -253,6 +253,8 @@ for(String element : liste)
 
 **Note:** On n’a plus accès à l’index de l’élément dans la liste. Si on en a besoin on peut passer par une variable locale incrémentée à chaque passage dans la boucle
 
+Exemples en live: https://www.codiva.io/p/956abd10-52a8-4a22-9d3f-b28bc73bfd87
+
 ---
 
 # Les Collections

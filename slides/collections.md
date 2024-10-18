@@ -181,7 +181,7 @@ import java.util.HashMap;
 
 //On met le type de l'interface et non celui de l'implémentation
 //pour ne pas lier le code à une implémentation donnée d'une collection
-java.util.Map<String> myMap = new new java.util.HashMap<String,String>();
+java.util.Map<String,String> myMap = new new java.util.HashMap<String,String>();
 ```
 
 ```java
@@ -190,7 +190,7 @@ import java.util.HashMap;
 
 //On met le type de l'interface et non celui de l'implémentation
 //pour ne pas lier le code à une implémentation donnée d'une collection
-java.util.Map<String> myMap = new new java.util.HashMap<String,String>();
+java.util.Map<String,String> myMap = new new java.util.HashMap<String,String>();
 myMap.put("clef1", "Hello");
 myMap.put("clef2", "World");
 
@@ -203,7 +203,7 @@ import java.util.HashMap;
 
 //On met le type de l'interface et non celui de l'implémentation
 //pour ne pas lier le code à une implémentation donnée d'une collection
-java.util.Map<String> myMap = new new java.util.HashMap<String,String>();
+java.util.Map<String,String> myMap = new new java.util.HashMap<String,String>();
 myMap.put("clef1", "Hello");
 myMap.put("clef2", "World");
 System.out.println(myMap.get("clef2")); //affiche "World"

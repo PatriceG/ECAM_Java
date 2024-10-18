@@ -14,7 +14,7 @@
 
 - Les répertoires contenant les packages doivent être présents dans la variable d'environnement **CLASSPATH**
 - En dehors du package (sans directive import), les noms des classes doivent être indiqués sous leur forme complète: _packagename.subpackagename.ClassName_ (java.io.File)
-- L'instruction _import packagename.*_ permet d'utiliser des classes sans les préfixer par leur nom de package.   
+- L'instruction _import packagename.*_ permet d'utiliser des classes sans les préfixer par leur nom de package.
 - Les API du JDK sont organisées en packages (java.lang, java.io, ...)
 
 ---
@@ -23,12 +23,12 @@
 ## Le CLASSPATH
 
 - La variable d’environnement **CLASSPATH** indique à la JVM les chemins pour la recherche des classes (répertoires parents de la racine des packages).
-- Si les classes sont dans un fichier ._jar_ alors il faut mettre **le chemin complet du fichier** dans le CLASSPATH.
+- Si les classes sont dans un fichier _.jar_ alors il faut mettre **le chemin complet du fichier** dans le CLASSPATH.
 - Exemples:
   - Classe _fr.ecam.Test_ située dans le répertoire _/home/ecam/_
   - Le CLASSPATH doit contenir _/home/ecam/_
 
-  - Classe _fr.ecam.Test_ _située dans un fichier _Test.jar_ dans _/home/ecam/_
+  - Classe _fr.ecam.Test_ située dans un fichier _Test.jar_ dans _/home/ecam/_
   - Le CLASSPATH doit contenir le fichier _/home/ecam/Test.jar_ (et non le dossier dans lequel il est situé)
 
 ---

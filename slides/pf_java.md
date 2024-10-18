@@ -21,14 +21,3 @@ JavaEE
   - Modèle d’application dit N-tiers
 
 ![JavaEE](/images/javaEE.png){style="width: 50%;"}
-
-
----
-
-# La Plafeforme Java
-JavaEE
-
-  - JavaEE enrichit JavaSE comme indiqué ci-dessous:
-  
-![JavaEE2](/images/javaEE2.png){style="width: 50%;"}
-

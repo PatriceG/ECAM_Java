@@ -3,8 +3,8 @@
 
 - Les packages permettent de regrouper les classes par domaine fonctionnel ou technique.
 - Un package regroupe un ensemble de classes sous un même espace de nommage, empêchant ainsi les conflits de noms de classes.
-- Les noms des packages suivent un schéma hiérarchique: _name.subname _...
-- Une classe _Watch_ appartenant au package_ time.clock_ doit se trouver dans le fichier _time/clock/Watch.java_
+- Les noms des packages suivent un schéma hiérarchique: _name.subname..._
+- Une classe _Watch_ appartenant au package _time.clock_ doit se trouver dans le fichier _time/clock/Watch.java_
 - Les packages permettent au compilateur et à la JVM de localiser les fichiers contenant les classes à charger.
 - L'instruction _package_ indique à quel package appartient la ou les classe(s) de l'unité de compilation (le fichier).
 

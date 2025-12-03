@@ -480,7 +480,7 @@ La doc de référence de la JSTL est ici: http://docs.oracle.com/javaee/5/tutori
 - Langage utilisé pour spécifier les valeurs des attributs.
 - Syntaxe: _${obj.attrib.nestedAttrib}_
 - Supporte les opérateurs _== < > != && || !_
-- Recherche des objets dans les scopes p_age → request → session → application_
+- Recherche des objets dans les scopes page → request → session → application
 - Possibilité de spécifier explicitement un scope de recherche.
 - Propriétés imbriquées:
   - _${obj.attrib}_ équivalent à _${obj[attrib]}_
@@ -515,13 +515,13 @@ La doc de référence de la JSTL est ici: http://docs.oracle.com/javaee/5/tutori
 - Affichage d'une valeur:
  
 ```html 
-Bonjour <c:out value="${userContext.userName}"/> 
+Bonjour <c:out value="${uCtx.userName}"/> 
 ```
 
 - On peut aussi mixer texte et EL dans l'expression à afficher:
   
 ```html
-<c:out value="Bonjour ${userContext.userName}"/> 
+<c:out value="Bonjour ${uCtx.userName}"/> 
 ```
 
 ---
@@ -537,7 +537,7 @@ La liste contient <c:out value="${fn:length(obj.maListe)}"/> éléments.
 
 ```
 
-_Note:_ Ne permet pas d'avoir un _else_. Il faut utiliser le tag _c:choose_ pour cela.
+_Note:_ Ne permet pas d'avoir un _else_. Il faut utiliser le tag __c:choose__ pour cela.
 
 - Il existe d'autres fonctions JSTL:
   - _toUpperCase, toLowerCase_
